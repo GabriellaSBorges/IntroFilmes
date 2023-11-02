@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    background-color:rgba(31, 75, 122, 1);
+}
+
+body * {
+    font-family: 'Inter', sans-serif;
+    color: white;
+}
+
+#container {
+    margin: 26px 119px;
+}
+
+#cabecalho {
+    background-color: #217DA5;
+    width: 100%;
+    height: 76px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo img {
+    width: 166.5px;
+    height: 40.6px;
+}
+
+.title1, .title2 {
+    display: inline;
+}
+
+.title, .pipoca {
+    display: inline-block;
+}
+
+.title1 {
+    font-weight: 400;
+    font-size: 101.34px;
+    line-height: 122.65px;
+
+    width: 677px;
+    height: 123px;
+}
+
+.title2 {
+    font-weight: 700;
+    font-size: 101.34px;
+    line-height: 122.65px;
+
+    width: 677px;
+    height: 123px;
+}
+
+.subtitle {
+    font-weight: 400;
+    font-size: 18.49px;
+    line-height: 22.37px;
+
+    width: 750px;
+    height: 22px;
+}
+
+.pipoca {
+    width: 157px;
+    height: 157px;
+}
+
+
+#linha {    
+    border: 1px solid #217DA5;
+    width: 100%;
+    margin-top: 73px;
+}
+
+#catalogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.title_catalogo {
+    font-weight: 700;
+    font-size: 52.73px;
+    line-height: 63.81px;
+
+    width: 295px;
+    height: 64px;
+
+    margin-top: 37px;
+    
+    
+}
+
+#grid-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 41px;
+
+    margin-top: 28px;
+}
+
+.item {
+    padding: 70% 0;
+
+    background-color: rgba(33, 125, 165, 1);
+    border-radius: 10px;
+
+}
+
+#final {
+    background-color: rgba(11, 45, 82, 1);
+    width: 100%;
+    height: 309px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#logo2 img {
+    width: 363.5px;
+    height: 88.64px;
+
+    margin-top: 88px;
+}
+
+.direitos {
+    font-weight: 400;
+    font-size: 14.15px;
+    line-height: 17.13px;
+
+    width: 336px;
+    height: 17px;
+    color: rgba(31, 75, 122, 1);
+
+    margin-top: 100px;
+
+}
