@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" class="">
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,38 +26,64 @@
         </div>     
         <div class="pipoca">
             <img
-                src="./assets/pipoca.png"
+                src="./assets/pipoca1.png"
                 alt="pipoca"
             />
         </div>
+        <div id="switch" onclick="toggleMode()">
+            <button></button>
+            <span></span>
+        </div>
+
+
         <div id="linha"></div>
         <div id="catalogo">
             <div class="title_catalogo">CATÁLOGO</div>
         </div>
         
-        <div id="grid-container">
-            <div class="item">
-                <img class="img1"
-                    src="./assets/image 6.png"
-                />
-                
-            </div>
-            <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
-        </div>
+        <section id="filmes">
+            <section id="item" class="filme1" onclick="toggleMode()" ></section>
+            <section id="item" class="rei-leao" onclick="toggleMode()"></section>
+            <section id="item" class="rapunzel" onclick="toggleMode()"></section>
+            <section id="item" class="toy-story" onclick="toggleMode()"></section>
+            <section id="item" class="next" onclick="toggleMode()"></section>
+            <section id="item"></section>
+            <section id="item"></section>
+            <section id="item"></section>
+            <section id="item"></section>
+            <section id="item"></section>
+            <section id="item"></section>
+            <section id="item"></section>
+            <section id="item"></section>
+            <section id="item"></section>
+            <section id="item"></section>
+            <section id="item"></section>
+            <section id="item"></section>
+            <section id="item"></section>
+            <section id="item"></section>
+            <section id="item"></section>
+            <section id="item"></section>
+            <section id="item"></section>
+            <section id="item"></section>
+            <section id="item"></section>
+        </section>
+
+        
+        
+        <script src="script.js"></script>
+
     </div>
+
+    <!-- <div id="filmes-click">
+        <div id="item-click">
+            <div class="linha-amarela"></div>
+            <div class="seta-amarela">
+                <img src="./assets/Rectangle 30.png"/>
+            </div>
+        </div>
+    </div> -->
+    
+
     <div id="final">
         <div id="logo2">
             <img
@@ -68,5 +94,6 @@
         <p class="direitos">INTROCOMP 2022 ・Todos os direitos reservados</p>
     </div>
     
+    <script src="./script.js"></script>
 </body>
 </html>

@@ -2,11 +2,28 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
+    position: relative;
+}
+
+:root {
+    --bg-color: #0E3054;
+    --final-bg-color: #051B32;
+    --switch-bg: #FFFA85;
+    --switch-span-bg: #215184;
+    --switch-bg-url: url(./assets/MoonStars.svg);
+}
+
+.light {
+    --bg-color: rgba(31, 75, 122, 1);
+    --final-bg-color: rgba(11, 45, 82, 1);
+    --switch-bg: #E19500;
+    --switch-span-bg: #3D8DAF;
+    --switch-bg-url: url(./assets/Sun.svg);
 }
 
 body {
-    background-color:rgba(31, 75, 122, 1);
+    background-color:var(--bg-color);
+    position: relative;
 }
 
 body * {
@@ -73,11 +90,51 @@ body * {
     height: 157px;
 }
 
+/* .pipoca, #switch {
+    display: inline-block;
+} */
+
+#switch {
+    width: 64px;
+    position: relative;
+    margin-top: 10px;
+    margin-left: 95%;
+    /* border: 1px solid red; */
+}
+
+.light #switch button {
+    right: 0;
+    left: initial;
+}
+
+#switch button {
+    width: 32px;
+    height: 32px;
+    background: var(--switch-bg) var(--switch-bg-url) no-repeat center;   
+    border: 0;
+    border-radius: 50%;
+
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: 1;
+    transform: translateY(-50%);
+}
+
+#switch span {
+    display: block;
+    width: 64px;
+    height: 24px;
+    background: var(--switch-span-bg);
+
+    display: block;
+    border-radius: 9999px;
+}
 
 #linha {    
     border: 1px solid #217DA5;
     width: 100%;
-    margin-top: 73px;
+    margin-top: 30px;
 }
 
 #catalogo {
@@ -96,30 +153,99 @@ body * {
     height: 64px;
 
     margin-top: 37px;
-    
-    
 }
 
-#grid-container {
+#filmes {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     grid-gap: 41px;
 
     margin-top: 28px;
+
 }
 
-.item {
+#item {
     padding: 70% 0;
-
     background-color: rgba(33, 125, 165, 1);
-    border-radius: 10px;
+}
 
+.next {
+    background: url(./assets/Frame.png) no-repeat center;
+}
+
+.filme1 {
+    background: url(./assets/image\ 6.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.filme1:hover {
+    border: 4.5px solid rgba(244, 199, 8, 1);
+    border-style: inset;
+}
+
+.rei-leao {
+    background-image: url(./assets/rei\ leao.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.rei-leao:hover {
+    border: 4.5px solid rgba(244, 199, 8, 1);
+    border-style: inset;
+}
+
+.rapunzel {
+    background-image: url(./assets/rapunzel.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.rapunzel:hover {
+    border: 4.5px solid rgba(244, 199, 8, 1);
+    border-style: inset;
+}
+
+.toy-story {
+    background-image: url(./assets/toy\ story.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.toy-story:hover {
+    border: 4.5px solid rgba(244, 199, 8, 1);
+    border-style: inset;
+}
+
+#filmes {
+    grid-row: 2;
+}
+
+.linha-amarela {
+    width: 100%;
+    height: 19px;
+    background-color: rgba(244, 199, 8, 1);
+    position: relative;
+    z-index: 1;
+    
+}
+
+.seta-amarela {
+    padding-left: 457px;
+    width: 26.87;
+    height: 26.87;
+    position: relative;
+    z-index: 2;
+    top: 0;
+    transform: translateY(-90%);
 }
 
 #final {
-    background-color: rgba(11, 45, 82, 1);
+    background-color: var(--final-bg-color);
     width: 100%;
     height: 309px;
+
+    margin-top: 100px;
     
     display: flex;
     flex-direction: column;
@@ -143,5 +269,4 @@ body * {
     color: rgba(31, 75, 122, 1);
 
     margin-top: 100px;
-
 }
