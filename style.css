@@ -8,18 +8,24 @@
 :root {
     --bg-color: #0E3054;
     --final-bg-color: #051B32;
-    --switch-bg: #FFFA85;
+
+    --switch-bg: #ffe44b;
     --switch-span-bg: #215184;
     --switch-bg-url: url(./assets/MoonStars.svg);
+    --switch-button-border: rgb(238, 194, 0);
 }
 
 .light {
     --bg-color: rgba(31, 75, 122, 1);
     --final-bg-color: rgba(11, 45, 82, 1);
+
     --switch-bg: #E19500;
     --switch-span-bg: #3D8DAF;
     --switch-bg-url: url(./assets/Sun.svg);
+    --switch-button-border: #cf7500;
 }
+
+
 
 body {
     background-color:var(--bg-color);
@@ -90,16 +96,15 @@ body * {
     height: 157px;
 }
 
-/* .pipoca, #switch {
-    display: inline-block;
-} */
+.pipoca:hover {
+    content: url(./assets/pipoca.png);
+}
 
 #switch {
     width: 64px;
     position: relative;
     margin-top: 10px;
     margin-left: 95%;
-    /* border: 1px solid red; */
 }
 
 .light #switch button {
@@ -119,6 +124,11 @@ body * {
     left: 0;
     z-index: 1;
     transform: translateY(-50%);
+}
+
+#switch button:hover {
+    border: 5px solid var(--switch-button-border);
+    transition: 0.2s;
 }
 
 #switch span {
@@ -161,7 +171,6 @@ body * {
     grid-gap: 41px;
 
     margin-top: 28px;
-
 }
 
 #item {
@@ -171,6 +180,7 @@ body * {
 
 .next {
     background: url(./assets/Frame.png) no-repeat center;
+    background-color: rgba(33, 125, 165, 1);
 }
 
 .filme1 {
@@ -259,7 +269,7 @@ body * {
     margin-top: 88px;
 }
 
-.direitos {
+.footer {
     font-weight: 400;
     font-size: 14.15px;
     line-height: 17.13px;
