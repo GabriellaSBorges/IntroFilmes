@@ -2,12 +2,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    position: relative;
+    top: 0;
+    left: 0;
 }
 
 :root {
-    --bg-color: #0E3054;
-    --final-bg-color: #051B32;
+    --bg-color: #051D37;
+    --final-bg-color: #021427;
 
     --switch-bg: #ffe44b;
     --switch-span-bg: #215184;
@@ -25,11 +26,8 @@
     --switch-button-border: #cf7500;
 }
 
-
-
 body {
     background-color:var(--bg-color);
-    position: relative;
 }
 
 body * {
@@ -40,6 +38,8 @@ body * {
 #container {
     margin: 26px 119px;
 }
+
+/* CABEÇALHO */ 
 
 #cabecalho {
     background-color: #217DA5;
@@ -102,9 +102,11 @@ body * {
 
 #switch {
     width: 64px;
-    position: relative;
+
     margin-top: 10px;
     margin-left: 95%;
+
+    position: relative;
 }
 
 .light #switch button {
@@ -113,12 +115,12 @@ body * {
 }
 
 #switch button {
-    width: 32px;
-    height: 32px;
     background: var(--switch-bg) var(--switch-bg-url) no-repeat center;   
     border: 0;
     border-radius: 50%;
-
+    width: 32px;
+    height: 32px;
+    
     position: absolute;
     top: 50%;
     left: 0;
@@ -132,11 +134,10 @@ body * {
 }
 
 #switch span {
-    display: block;
+    background: var(--switch-span-bg);
     width: 64px;
     height: 24px;
-    background: var(--switch-span-bg);
-
+    
     display: block;
     border-radius: 9999px;
 }
@@ -144,8 +145,11 @@ body * {
 #linha {    
     border: 1px solid #217DA5;
     width: 100%;
+
     margin-top: 30px;
 }
+
+/* CATALOGO */
 
 #catalogo {
     display: flex;
@@ -167,20 +171,33 @@ body * {
 
 #filmes {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fill, 203px);
     grid-gap: 41px;
+    justify-content: center;
 
     margin-top: 28px;
 }
 
 #item {
-    padding: 70% 0;
     background-color: rgba(33, 125, 165, 1);
+    width: 203px;
+    height: 290px;
+}
+
+#filmes-click {
+    display: none;
+
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 2;
+    grid-row-end: 3;
+
+    width: 100%;
+    height: 184px; 
 }
 
 .next {
     background: url(./assets/Frame.png) no-repeat center;
-    background-color: rgba(33, 125, 165, 1);
 }
 
 .filme1 {
@@ -227,39 +244,144 @@ body * {
     border-style: inset;
 }
 
-#filmes {
-    grid-row: 2;
-}
+
+/* WHEN CLICKING */
+
+#description {
+    display: none;
+    position: absolute; 
+    top: 788px;
+
+    background-color: rgba(33, 125, 165, 1);
+    box-shadow: 0 10px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 184px;
+} 
 
 .linha-amarela {
+    background-color: rgba(244, 199, 8, 1);
     width: 100%;
     height: 19px;
-    background-color: rgba(244, 199, 8, 1);
+
     position: relative;
-    z-index: 1;
-    
 }
 
 .seta-amarela {
-    padding-left: 457px;
     width: 26.87;
     height: 26.87;
-    position: relative;
-    z-index: 2;
-    top: 0;
     transform: translateY(-90%);
+
+    margin-left: 510px;
 }
+
+#item-click {
+    display: flex;
+    
+    width: 100%;
+    height: 165px;
+    margin-top: -42px;
+}
+
+#filmImage {
+    width: 618px;
+    height: 165px;
+}
+
+#descricao {
+    margin-left: 24px;
+    margin-top: 13px;
+    margin-right: 25px;
+}
+
+#filme-details {
+    height: 60px;
+    display: inline;
+    position: relative;
+
+    top: 0;
+    left: 0;
+}
+
+#filmTitle {
+    font-weight: 700;
+    font-size: 49.67px;
+    line-height: 60.11px;
+
+    width: 285px;
+    height: 60px;
+    
+}
+
+#year {
+    font-weight: 700;
+    font-size: 16.56px;
+    line-height: 20.04px;
+
+    width: 43px;
+    height: 20px;
+
+    position: absolute;
+    margin-top: 19px;
+    margin-left: 280px;
+    right: 0;
+}
+
+#rating {
+    background: url(./assets/rating.png) ;
+    background-size: cover;
+    background-position: center;
+
+    width: 140px;
+    height: 28px;
+
+    margin-top: 25px;
+    /* margin-left: 249px; */
+
+    position: absolute;
+    left: 70%;
+}
+
+#delete {
+    background: url(./assets/delete.png) ;
+    background-size: cover;
+    background-position: center;
+
+    width: 28px;
+    height: 28px;
+
+    margin-top: 25px;
+    margin-left: 26px;
+
+    position: absolute;
+    left: 90%;
+
+}
+
+#summary {
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18.15px;
+
+    height: 70px;
+    margin-top: 11px;    
+    
+}
+
+
+
+/* FINAL */
 
 #final {
     background-color: var(--final-bg-color);
     width: 100%;
     height: 309px;
 
-    margin-top: 100px;
+    margin-top: 314px;
     
     display: flex;
     flex-direction: column;
     align-items: center;
+    /* position: absolute; */
 }
 
 #logo2 img {
@@ -279,4 +401,4 @@ body * {
     color: rgba(31, 75, 122, 1);
 
     margin-top: 100px;
-}
+} 

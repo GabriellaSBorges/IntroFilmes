@@ -18,6 +18,7 @@
             />
         </div>
     </div>
+
     <div id="container">
         <div class="title">
             <div class="title1">INTRO</div>
@@ -35,20 +36,20 @@
             <button></button>
             <span></span>
         </div>
-
-
         <div id="linha"></div>
         <div id="catalogo">
             <div class="title_catalogo">CATÁLOGO</div>
         </div>
-        
         <section id="filmes">
-            <section id="item" class="filme1" ></section>
+            <section id="item" class="filme1"></section>
             <section id="item" class="rei-leao"></section>
             <section id="item" class="rapunzel"></section>
             <section id="item" class="toy-story"></section>
-            <section id="item" class="next"></section>
+            <section id="item" class="next transitionBg"></section>
             <section id="item"></section>
+            
+            <div id="filmes-click"></div>
+
             <section id="item"></section>
             <section id="item"></section>
             <section id="item"></section>
@@ -69,31 +70,48 @@
             <section id="item"></section>
         </section>
 
-        
-        
-        <script src="script.js"></script>
 
-    </div>
-
-    <!-- <div id="filmes-click">
-        <div id="item-click">
+        <div id="description">
             <div class="linha-amarela"></div>
             <div class="seta-amarela">
                 <img src="./assets/Rectangle 30.png"/>
             </div>
-        </div>
-    </div> -->
-    
 
-    <div id="final">
-        <div id="logo2">
-            <img
-                src="./assets/introcomp2.png"
-                alt="logo introcomp"
-            />
+            <div id="item-click" >
+                <img 
+                    src="./assets/image 4.png"
+                    id="filmImage"
+                />
+
+                <div id="descricao">
+                    <div id="filme-details">
+                        <h1 id="filmTitle">O REI LEÃO</h1>
+                        <div id="year">1994</div>
+                        <div id="rating"> </div> 
+                        <div id="delete"></div>  
+                    </div>
+        
+                    <p id="summary">"O Rei Leão" retrata uma jornada pela savana africana, 
+                        onde nasce o futuro rei da Pedra do Reino, Simba. O pequeno leão é 
+                        fiel ao seu destino de assumir o reinado. Mas Scar, irmão de Mufasa 
+                        e ex-herdeiro do trono, tem seus próprios planos. Com a ajuda de 
+                        dois novos e inusitados amigos, Simba terá que crescer e voltar 
+                        para recuperar o que é seu por direito.</p>
+                </div>          
+            </div> 
         </div>
-        <p class="footer">INTROCOMP 2022 ・Todos os direitos reservados</p>
+
     </div>
+
+        <div id="final"> 
+            <div id="logo2">
+                <img
+                    src="./assets/introcomp2.png"
+                    alt="logo introcomp"
+                />
+            </div>
+            <p class="footer">INTROCOMP 2022 ・Todos os direitos reservados</p>
+        </div> 
     
     <script src="./script.js"></script>
 </body>

@@ -1,17 +1,22 @@
 function toggleMode() {
-    const html = document.documentElement
+    const html = document.documentElement;
 
-    html.classList.toggle('light')
+    html.classList.toggle('light');
 }
 
-function togglePipoca() {
-    const img = document.getElementById('imagem');
+var rei_leao = document.querySelector(".rei-leao");
 
-    imagem.addEventListener('mouseover', function() {
-        imagem.src = 'pipoca.png';
-      });
-      
-      imagem.addEventListener('mouseout', function() {
-        imagem.src = 'pipoca1.png';
-      });
-}
+rei_leao.addEventListener("click", function() {
+
+	var description = document.querySelector("#description");
+	var space = document.querySelector("#filmes-click");
+
+	if(description.style.display == "none") {
+		description.style.display = "block";
+		space.style.display = "block";
+
+	} else {
+		description.style.display = "none";
+		space.style.display = "none";
+	}
+});
