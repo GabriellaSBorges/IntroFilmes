@@ -188,7 +188,7 @@ body * {
     display: none;
 
     grid-column-start: 1;
-    grid-column-end: 6;
+    /* grid-column-end: 6; */
     grid-row-start: 2;
     grid-row-end: 3;
 
@@ -245,7 +245,7 @@ body * {
 }
 
 
-/* WHEN CLICKING */
+/* DESCRIPTION */
 
 #description {
     display: none;
@@ -266,7 +266,7 @@ body * {
     position: relative;
 }
 
-.seta-amarela {
+.seta-amarela1 {
     width: 26.87;
     height: 26.87;
     transform: translateY(-90%);
@@ -367,7 +367,167 @@ body * {
     
 }
 
+/* ADD FILM */
 
+#add-film {
+    display: none;
+    position: absolute; 
+    top: 788px;
+
+    background-color: rgba(33, 125, 165, 1);
+    box-shadow: 0 10px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 184px;
+    
+} 
+
+.seta-amarela2 {
+    width: 26.87;
+    height: 26.87;
+    transform: translateY(-90%);
+
+    margin-left: 1189px;
+}
+
+#add-click {
+    display: flex;
+    
+    width: 100%;
+    height: 165px;
+    margin-top: -42px;
+}
+
+#insert-poster {
+    background-color: rgba(137, 191, 204, 1);
+    width: 616px;
+    height: 165px;
+
+    margin-left: 4px;
+
+    display: flex;
+}
+
+#add, #add-phrase {
+    display: inline-flex;
+}
+
+#add-image {
+    width: 96px;
+    height: 96px;
+
+    margin-left: 19px;
+    margin-top: 24px;
+}
+
+#add-phrase {
+    color: rgba(33, 125, 165, 1);
+    font-weight: 700;
+    font-style: italic;
+    font-size: 22.75px;
+    line-height: 27.54px;
+
+    width: 175px;
+    height: 28px;
+
+    margin-top: 58px;
+    margin-left: 5px;
+}
+
+#add-description {
+    width: 80%;
+
+    margin-left: 24px;
+    margin-top: 13px;
+    margin-right: 25px;
+}
+
+#add-filme-details {
+    height: 70px;
+    display: flex;
+    position: relative;
+
+    top: 0;
+    left: 0;
+}
+
+#add-filmTitle {
+    color: rgba(255, 255, 255, 0.46);
+    font-weight: 700;
+    font-style: italic;
+    font-size: 49.67px;
+    line-height: 60.11px;
+
+    width: 353px;
+    height: 60px;
+
+    margin-top: 13px;
+}
+
+#add-year {
+    color: rgba(148, 185, 207, 1);
+    font-weight: 700;
+    font-size: 16.56px;
+    line-height: 20.04px;
+
+    width: 195px;
+    height: 20px;
+
+    /* position: absolute; */
+    margin-top: 37px;
+    /* margin-left: 280px; */
+    /* right: 0; */
+
+} 
+
+#add-rating {
+    background: url(./assets/rating-null.png) ;
+    background-size: cover;
+    background-position: center;
+
+    width: 140px;
+    height: 28px;
+
+    margin-top: 29px;
+    margin-left: 79px;
+
+    position: absolute;
+    left: 75%;
+}
+
+#insert-film, #save-film {
+    display: inline;
+}
+
+#insert-film {
+    color: rgba(148, 185, 207, 1);
+    font-weight: 700;
+    font-style: italic;
+    font-size: 16.15px;
+    line-height: 18.15px;
+
+    width: 771px;
+    height: 70px;
+} 
+
+#save-film {
+    background-color: rgba(244, 199, 8, 1);
+    width: 172px;
+    height: 25px;
+    border-radius: 4px;
+
+    color: rgba(33, 125, 165, 1);
+    font-weight: 700;
+    font-size: 12.6px;
+    line-height: 15.24px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    left: 85%;
+    top: 80%
+} 
 
 /* FINAL */
 
